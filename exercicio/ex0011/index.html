@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador. </p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+<source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+    <img src="imagens/img-g.png" alt="imagem flex">
+</picture>
+<h1> reproduzindo audio</h1>
+    <p>vamos aprender reproduzir audio<p>
+        <!--formatos de audio: mp3, wav, OGG-->
+
+<audio preload="metadata" autoplay controls>
+<source src="midia/efeito-trem.mp3.mp3" type="audio/mpeg">
+<source src="midia/efeito-trem.ogg" type="audio/ogg">
+<source src="midia/efeito-trem.wav" type="audio/wav">
+<p>infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/efeito-trem.mp3.mp3">click aqui para baixar o arquivo MP3.</a></p>
+</audio>
+</body>
+</html>

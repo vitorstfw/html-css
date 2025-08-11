@@ -101,7 +101,7 @@ background-image: url("imagens/background001.jpg");
     background-attachment: fixed;
     background-position: right center;
     background-repeat: no-repeat;
-    
+    min-width: 100%;
 
 }
 
@@ -111,6 +111,7 @@ background-image: url("imagens/background002.jpg");
     background-attachment: fixed;
     background-position: right center;
     background-repeat: no-repeat;
+    min-width: 100%;
 
 
 }

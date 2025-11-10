@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email e telefone</title>
+</head>
+<body>
+    <h1> Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+<fieldset>
+    <legend>Dados pessoais</legend>
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="Nome" id="inome" required autocomplete="name" minlength="5" maxlength="40">
+    </p>
+    
+    <p>
+        <label for="iemail">E-mail</label>
+        <input type="email" name="email" id="iemail" required autocomplete="email">
+    </p>
+    
+    <p>
+        <label for="itel">telefone</label>
+        <input type="tel" name="tel" id="itel" required autocomplete="tel"
+        pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxxx-xxxx">
+    </p>
+     </fieldset>
+    <!--estudar mais sobre RegEx-->
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+
+
+    </form>
+</body>
+</html>

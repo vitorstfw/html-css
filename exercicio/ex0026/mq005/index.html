@@ -6,8 +6,9 @@
     <title>menu responsivo</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midia-query.css">
 </head>
-<body>
+<body onresize="mudouTamalho()">
     <header>
 <h1>Meu site</h1>
 <span id="burger" class="material-symbols-outlined" onclick="clickmenu()">
@@ -33,6 +34,16 @@ menu
         </article>
     </main>
     <script>
+function mudouTamalho(){
+    if(window.innerWidth >= 768){
+itens.style.display = 'block';
+    }else{
+        itens.style.diplay = 'none';
+    }
+    
+}
+
+
 function clickmenu(){
 if(itens.style.display == 'block'){
     itens.style.display = 'none';

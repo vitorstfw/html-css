@@ -21,6 +21,10 @@ header h1{
    margin-bottom: 10px;
 }
 
+header > p{
+    margin-bottom: 10px;
+}
+
 input[type="search"]{
    width: 302px;
    height: 40px;

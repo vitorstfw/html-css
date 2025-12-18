@@ -45,12 +45,14 @@ header > h1 {
 
 header > p {
     padding-bottom: 50px;
+
 }
 
 header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+
 }
 
 header a:hover, footer a:hover {

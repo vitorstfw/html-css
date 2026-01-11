@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap</title>
+    <style>
+    div.conteiner{
+        background-color: lightsalmon;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+     div.conteiner1{
+        background-color: lightsalmon;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+     div.conteiner2{
+        background-color: lightsalmon;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
+     div.conteiner3{
+        background-color: lightsalmon;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+     div.conteiner4{
+        background-color: lightsalmon;
+         height: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+    }
+
+    div.item{
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+      
+       
+    }
+
+    div.item1{
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+    flex: auto;
+       
+    }
+
+    div.item2{
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+       
+    }
+
+    div.item3{
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+       flex: auto;
+    }
+
+    div.item4{
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+       flex: auto;
+    }
+    </style>
+</head>
+<body>
+             <!--flex-direction: row / flex-wrap: nowrap-->
+<div class="conteiner">
+        <div class="item">exemplo de bloco A</div>
+        <div class="item">exemplo de bloco B</div>
+        <div class="item">exemplo de bloco C</div>
+        <div class="item">exemplo de bloco D</div>
+        <div class="item">exemplo de bloco E</div>
+        <div class="item">exemplo de bloco F</div>
+        <div class="item">exemplo de bloco G</div>
+    </div> <br>
+
+            <!--flex-direction: row / flex-wrap: wrap-->
+    <div class="conteiner1"> 
+        <div class="item1">exemplo de bloco A</div>
+        <div class="item1">exemplo de bloco B</div>
+        <div class="item1">exemplo de bloco C</div>
+        <div class="item1">exemplo de bloco D</div>
+        <div class="item1">exemplo de bloco E</div>
+        <div class="item1">exemplo de bloco F</div>
+        <div class="item1">exemplo de bloco G</div>
+    </div> <br>
+
+             <!--flex-direction: row / flex-wrap: wrap-reverse-->
+     <div class="conteiner2">
+        <div class="item2">exemplo de bloco A</div>
+        <div class="item2">exemplo de bloco B</div>
+        <div class="item2">exemplo de bloco C</div>
+        <div class="item2">exemplo de bloco D</div>
+        <div class="item2">exemplo de bloco E</div>
+        <div class="item2">exemplo de bloco F</div>
+        <div class="item2">exemplo de bloco G</div>
+    </div> <br>
+
+            <!--flex-direction: column / flex-wrap: wrap-->
+     <div class="conteiner3">
+        <div class="item3">exemplo de bloco A</div>
+        <div class="item3">exemplo de bloco B</div>
+        <div class="item3">exemplo de bloco C</div>
+        <div class="item3">exemplo de bloco D</div>
+        <div class="item3">exemplo de bloco E</div>
+        <div class="item3">exemplo de bloco F</div>
+        <div class="item3">exemplo de bloco G</div>
+    </div> <br>
+
+            <!--flex-direction: column-reverse / flex-wrap: wrap-reverse-->
+     <div class="conteiner4">
+        <div class="item4">exemplo de bloco A</div>
+        <div class="item4">exemplo de bloco B</div>
+        <div class="item4">exemplo de bloco C</div>
+        <div class="item4">exemplo de bloco D</div>
+        <div class="item4">exemplo de bloco E</div>
+        <div class="item4">exemplo de bloco F</div>
+        <div class="item4">exemplo de bloco G</div>
+    </div>
+
+</body>
+</html>
